@@ -10,9 +10,10 @@ date = datetime.datetime.now()
 Y = date.year
 M = date.month
 D = date.day
+S = date.second
  
 # Ym=$Y-$M
-Ymd=f'{Y}-{M}-{D}'
+Ymd=f'{Y}-{M}-{D} {S}'
 GitRep="autoLog"
  
 HomeDir="/Users/jhy/Documents"
