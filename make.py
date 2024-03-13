@@ -21,16 +21,6 @@ HomeDir="/Users/jhy/Documents"
 GitDir="$HomeDir/$GitRep"
 FileNm="log.md"
  
-# echo f"Ymd" > $GitDir/$FileNm
- 
-# cd $GitDir
-# git add .
-# git commit -m "$Ymd"
-
-# echo "" > $GitDir/$FileNm
-# git add .
-# git commit -m "$Ymd"
-
 # git push origin main
 directory = '/Users/jhy/Documents/autoLog'
 os.chdir(directory)
@@ -40,7 +30,7 @@ file_path = os.path.join(directory,'log.md')
 content = f'{Ymd}'
 
 if os.path.exists(file_path):
-    with open(file_path, 'a') as file:
+    with open(file_path, 'w') as file:
         file.write(content)
 
 call('git add .', shell=True)
