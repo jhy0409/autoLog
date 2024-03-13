@@ -14,7 +14,7 @@ S = date.second
  
 # Ym=$Y-$M
 Ymd=f'{Y}-{M}-{D} {S}'
-Ymd = date.strftime("%y%m%d %s")
+Ymd = date.strftime("%y%m%d %S")
 GitRep="autoLog"
  
 HomeDir="/Users/jhy/Documents"
