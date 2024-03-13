@@ -29,10 +29,13 @@ file_path = os.path.join(directory,'log.md')
 
 content = f'{Ymd}'
 
-if os.path.exists(file_path):
-    with open(file_path, 'w') as file:
-        file.write(content)
+for i in range(0, 5):
+    if os.path.exists(file_path):
+        with open(file_path, 'w') as file:
+            file.write(content)
 
-call('git add .', shell=True)
-call(['git', 'commit', '-m', Ymd])
+    call('git add .', shell=True)
+    call(['git', 'commit', '-m', Ymd])
+
+
 call('git push origin main', shell=True)
