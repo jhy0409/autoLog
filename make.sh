@@ -16,5 +16,10 @@ echo "\n$Ymd" >> $GitDir/$FileNm
  
 cd $GitDir
 git add .
-git commit -m "commit $FileNm"
+git commit -m "$Ymd"
+
+echo "" >> $GitDir/$FileNm
+git add .
+git commit -m "$Ymd"
+
 git push origin main
