@@ -36,5 +36,6 @@ for i in range(0, 5):
 
     call('git add .', shell=True)
     call(['git', 'commit', '-m', f'{Ymd} - {i}'])
-    call('git push origin main', shell=True)
+
+call('git push origin main', shell=True)
 
