@@ -17,10 +17,6 @@ Ymd=f'{Y}-{M}-{D} {S}'
 Ymd = date.strftime("%y%m%d %H:%M:%S")
 GitRep="autoLog"
  
-HomeDir="/Users/jhy/Documents"
-GitDir="$HomeDir/$GitRep"
-FileNm="log.md"
- 
 # git push origin main
 directory = '/Users/jhy/Documents/autoLog'
 os.chdir(directory)
