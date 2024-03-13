@@ -35,7 +35,7 @@ for i in range(0, 5):
             file.write(content)
 
     call('git add .', shell=True)
-    call(['git', 'commit', '-m', Ymd])
+    call(['git', 'commit', '-m', f'{Ymd} - {i}'])
 
 
 call('git push origin main', shell=True)
