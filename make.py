@@ -32,7 +32,7 @@ content = f'{Ymd}'
 for i in range(0, 5):
     if os.path.exists(file_path):
         with open(file_path, 'w') as file:
-            file.write(content)
+            file.write(f'{content} - {i}')
 
     call('git add .', shell=True)
     call(['git', 'commit', '-m', f'{Ymd} - {i}'])
