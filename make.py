@@ -30,12 +30,13 @@ file_path = os.path.join(directory,'log.md')
 content = f'{Ymd}'
 
 for i in range(0, 5):
+    idx = i + 1
     if os.path.exists(file_path):
         with open(file_path, 'w') as file:
-            file.write(f'{content} - {i}')
+            file.write(f'{content} - {idx}')
 
     call('git add .', shell=True)
-    call(['git', 'commit', '-m', f'{Ymd} - {i}'])
+    call(['git', 'commit', '-m', f'{Ymd} - {idx}'])
 
 call('git push origin main', shell=True)
 
