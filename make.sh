@@ -18,7 +18,7 @@ cd $GitDir
 git add .
 git commit -m "$Ymd"
 
-echo "" >> $GitDir/$FileNm
+echo "" > $GitDir/$FileNm
 git add .
 git commit -m "$Ymd"
 
