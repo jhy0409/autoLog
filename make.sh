@@ -12,7 +12,7 @@ HomeDir="/Users/jhy/Documents"
 GitDir="$HomeDir/$GitRep"
 FileNm="log.md"
  
-echo "\n$Ymd" >> $GitDir/$FileNm
+echo "\n$Ymd" > $GitDir/$FileNm
  
 cd $GitDir
 git add .
