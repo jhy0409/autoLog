@@ -12,11 +12,14 @@ HomeDir="/Users/jhy/Documents"
 GitDir="$HomeDir/$GitRep"
 FileNm="log.md"
  
-echo "\n$Ymd" > $GitDir/$FileNm
  
 cd $GitDir
+
+echo "\n$Ymd" > $GitDir/$FileNm
 git add .
 git commit -m "$Ymd"
+
+git push origin main
 
 echo "" > $GitDir/$FileNm
 git add .
