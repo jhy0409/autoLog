@@ -19,7 +19,7 @@ echo "\n$Ymd" > $GitDir/$FileNm
 git add .
 git commit -m "$Ymd"
 
-git push origin main
+git push origin master
 
 
 cd $GitDir
@@ -28,4 +28,4 @@ echo "" > $GitDir/$FileNm
 git add .
 git commit -m "$Ymd"
 
-git push origin main
+git push origin master
