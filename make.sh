@@ -13,19 +13,34 @@ GitDir="$HomeDir/$GitRep"
 FileNm="log.md"
  
  
-cd $GitDir
+# cd $GitDir
 
-echo "\n$Ymd" > $GitDir/$FileNm
-git add .
-git commit -m "$Ymd"
+# echo "\n$Ymd" > $GitDir/$FileNm
+# git add .
+# git commit -m "$Ymd"
 
-git push origin master
+# git push origin master
 
 
-cd $GitDir
+# cd $GitDir
 
-echo "" > $GitDir/$FileNm
-git add .
-git commit -m "$Ymd"
+# echo "" > $GitDir/$FileNm
+# git add .
+# git commit -m "$Ymd"
 
-git push origin master
+# git push origin master
+
+
+
+for ((i = 1; i <= 5; i++)); do
+    cd $GitDir
+
+    echo "\n$Ymd - $i" > $GitDir/$FileNm
+    # echo "" > $GitDir/$FileNm
+    
+    git add .
+    git commit -m "$Ymd - $i"
+    git push origin master
+
+done
+
