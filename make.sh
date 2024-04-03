@@ -3,9 +3,13 @@
 Y=$(date +%Y)
 M=$(date +%m)
 D=$(date +%d)
+
+H=$(date +%H)
+M=$(date +%M)
+S=$(date +%S)
  
 # Ym=$Y-$M
-Ymd=$Y-$M-$D
+Ymd="$Y-$M-$D $H:$M:$S"
 GitRep="autoLog"
  
 HomeDir="/Users/jhy/Documents"
