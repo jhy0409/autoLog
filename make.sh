@@ -12,26 +12,6 @@ HomeDir="/Users/jhy/Documents"
 GitDir="$HomeDir/$GitRep"
 FileNm="log.md"
  
- 
-# cd $GitDir
-
-# echo "\n$Ymd" > $GitDir/$FileNm
-# git add .
-# git commit -m "$Ymd"
-
-# git push origin master
-
-
-# cd $GitDir
-
-# echo "" > $GitDir/$FileNm
-# git add .
-# git commit -m "$Ymd"
-
-# git push origin master
-
-
-
 for ((i = 1; i <= 5; i++)); do
     cd $GitDir
 
@@ -40,7 +20,7 @@ for ((i = 1; i <= 5; i++)); do
     
     git add .
     git commit -m "$Ymd - $i"
-    git push origin master
+    git push origin main
 
 done
 
