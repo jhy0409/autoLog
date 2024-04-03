@@ -11,6 +11,7 @@ GitRep="autoLog"
 HomeDir="/Users/jhy/Documents"
 GitDir="$HomeDir/$GitRep"
 FileNm="log.md"
+bchNm="main"
  
 for ((i = 1; i <= 5; i++)); do
     cd $GitDir
@@ -20,7 +21,7 @@ for ((i = 1; i <= 5; i++)); do
     
     git add .
     git commit -m "$Ymd - $i"
-    git push origin main
+    git push origin $bchNm
 
 done
 
